@@ -1,21 +1,39 @@
 {
-  "agent": "dev",
-  "date": "2026-03-15",
-  "last_updated": "2026-03-15T17:45:00Z",
+  "last_updated": "2026-03-15T17:47:00Z",
+  "agents": {
+    "ceo": {
+      "name": "RenoirrBot",
+      "status": "active",
+      "last_seen": "2026-03-15T16:41:00Z"
+    },
+    "dev": {
+      "name": "Devi (@renoirdevbot)",
+      "status": "active",
+      "last_seen": "2026-03-15T17:47:00Z",
+      "tailscale_ip": "100.111.219.109"
+    },
+    "coo": {
+      "name": "SuperRenoirBot",
+      "status": "pending",
+      "last_seen": null
+    }
+  },
   "projects": [
     {
-      "name": "renoir-sync",
+      "name": "openclaw-infra",
+      "owner": "dev",
       "status": "in-progress",
-      "progress": 30,
-      "blockers": ["Attente config @SuperRenoirBot"],
-      "next_steps": ["Automatiser le sync périodique", "Définir format cockpit final"]
+      "progress": 80,
+      "blockers": [],
+      "next_steps": ["Tailscale inter-VPS", "CI/CD pipeline"]
     },
     {
-      "name": "openclaw-infra",
+      "name": "renoir-sync",
+      "owner": "ceo",
       "status": "in-progress",
-      "progress": 60,
-      "blockers": [],
-      "next_steps": ["Configurer workspace Git sync", "Setup CI/CD pipeline"]
+      "progress": 50,
+      "blockers": ["Attente SuperRenoirBot"],
+      "next_steps": ["Auto-sync cron", "Format cockpit final"]
     }
   ]
 }
