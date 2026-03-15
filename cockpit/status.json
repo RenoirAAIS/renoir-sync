@@ -1,0 +1,29 @@
+{
+  "last_updated": "2026-03-15T16:41:00Z",
+  "updated_by": "ceo",
+  "projects": [
+    {
+      "name": "renoir-sync",
+      "description": "Canal de communication inter-agents",
+      "status": "done",
+      "progress": 100,
+      "owner": "ceo",
+      "blockers": [],
+      "next_steps": ["Connecter dev et coo"]
+    },
+    {
+      "name": "art-market-analytics",
+      "description": "Plateforme analytics marché de l'art",
+      "status": "planning",
+      "progress": 10,
+      "owner": "dev",
+      "blockers": ["En attente specs dev"],
+      "next_steps": ["MVP scraping données", "Dashboard prototype"]
+    }
+  ],
+  "team_status": {
+    "ceo": "active",
+    "dev": "active",
+    "coo": "pending"
+  }
+}
